@@ -7,7 +7,7 @@ const Features: React.FC = () => {
       icon: <Zap className="w-10 h-10 text-[#F7AB0A]" />,
       title: "High-Speed Connectivity",
       description:
-        "Reliable, fast internet access for all residents with speeds up to 100Mbps.",
+        "Reliable, fast internet access for all residents with speeds up to 20Mbps.",
     },
     {
       icon: <Shield className="w-10 h-10 text-[#F7AB0A]" />,
@@ -37,7 +37,7 @@ const Features: React.FC = () => {
       icon: <Smartphone className="w-10 h-10 text-[#F7AB0A]" />,
       title: "Mobile Management",
       description:
-        "Control your network and view analytics from anywhere using our mobile app.",
+        "Control your network and view analytics from anywhere using our web Application.",
     },
   ];
 
