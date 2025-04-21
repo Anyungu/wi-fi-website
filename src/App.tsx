@@ -8,6 +8,8 @@ import WhatsAppButton from "./components/WhatsAppButton";
 import { trackPageView, initGA } from "./utils/analytics";
 import Services from "./components/Services";
 import Features from "./components/Features";
+import Pricing from "./components/Pricing";
+
 function App() {
   useEffect(() => {
     // Initialize analytics
@@ -51,6 +53,7 @@ function App() {
         <Hero />
         <Services />
         <Features />
+        <Pricing />
         <HowItWorks />
         {/* <Testimonials /> */}
         <Contact />
