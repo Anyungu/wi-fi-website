@@ -28,7 +28,7 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Wifi size={32} className="text-[#F7AB0A] mr-2" />
-            <span className="text-2xl font-bold text-gray-100">Emoh Links</span>
+            <span className="text-2xl font-semibold text-gray-100">E-Moh Links</span>
           </div>
 
           {/* Desktop Navigation */}
