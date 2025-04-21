@@ -36,14 +36,14 @@ const HowItWorks: React.FC = () => {
   ];
 
   return (
-    <section id="how-it-works" className="py-16 bg-white">
+    <section id="how-it-works" className="py-16 bg-gray-800">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-8 md:mb-0 pr-0 md:pr-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-100 mb-4">
               How It Works
             </h2>
-            <p className="text-lg text-blue-800 mb-8">
+            <p className="text-lg text-gray-300 mb-8">
               Our streamlined process ensures a smooth implementation from
               consultation to ongoing support.
             </p>
@@ -52,15 +52,15 @@ const HowItWorks: React.FC = () => {
               {steps.map((step, index) => (
                 <div key={index} className="flex">
                   <div className="mr-6">
-                    <div className="bg-blue-100 text-blue-600 font-bold w-12 h-12 rounded-full flex items-center justify-center">
+                    <div className="bg-[#F7AB0A]/10 text-[#F7AB0A] font-bold w-12 h-12 rounded-full flex items-center justify-center border border-[#F7AB0A]">
                       {step.number}
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-blue-900 mb-1">
+                    <h3 className="text-xl font-semibold text-gray-100 mb-1">
                       {step.title}
                     </h3>
-                    <p className="text-blue-800">{step.description}</p>
+                    <p className="text-gray-300">{step.description}</p>
                   </div>
                 </div>
               ))}
@@ -69,7 +69,7 @@ const HowItWorks: React.FC = () => {
             <div className="mt-10">
               <a
                 href="#contact"
-                className="inline-flex items-center font-medium text-blue-600 hover:text-blue-800 transition-colors duration-300"
+                className="inline-flex items-center font-medium text-[#F7AB0A] hover:text-[#F7AB0A]/80 transition-colors duration-300"
               >
                 Get started with us
                 <ArrowRight size={18} className="ml-2" />

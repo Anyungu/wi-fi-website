@@ -21,27 +21,29 @@ const Header: React.FC = () => {
   return (
     <header
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-md py-2" : "bg-transparent py-4"
+        isScrolled ? "bg-gray-900 shadow-lg py-2" : "bg-transparent py-4"
       }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <Wifi size={32} className="text-blue-600 mr-2" />
-            <span className="text-2xl font-bold text-blue-800">EMOH LINKS</span>
+            <Wifi size={32} className="text-[#F7AB0A] mr-2" />
+            <span className="text-2xl font-bold text-gray-100">Emoh Links</span>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            {["Services", "Features", "How It Works", "Contact"].map((item) => (
+            {[
+              "Services",
+              "Features",
+              "How It Works",
+              "Testimonials",
+              "Contact",
+            ].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
-                className={`font-medium transition-colors duration-200 ${
-                  isScrolled
-                    ? "text-blue-800 hover:text-blue-600"
-                    : "text-blue-900 hover:text-blue-600"
-                }`}
+                className="font-medium text-gray-300 hover:text-[#F7AB0A] transition-colors duration-200"
               >
                 {item}
               </a>
@@ -50,7 +52,7 @@ const Header: React.FC = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-blue-800"
+            className="md:hidden text-gray-300"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -60,7 +62,7 @@ const Header: React.FC = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-md py-4 px-4 transition-all duration-300 animate-fade-in-down">
+          <div className="md:hidden absolute top-full left-0 w-full bg-gray-900 shadow-lg py-4 px-4 transition-all duration-300 animate-fade-in-down">
             <nav className="flex flex-col space-y-4">
               {[
                 "Services",
@@ -72,7 +74,7 @@ const Header: React.FC = () => {
                 <a
                   key={item}
                   href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
-                  className="font-medium text-blue-800 hover:text-blue-600 transition-colors duration-200"
+                  className="font-medium text-gray-300 hover:text-[#F7AB0A] transition-colors duration-200"
                   onClick={() => setIsOpen(false)}
                 >
                   {item}
