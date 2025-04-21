@@ -19,10 +19,10 @@ const Hero: React.FC = () => {
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 animate-fade-in-delayed-more">
               <a
                 href="#contact"
-                className="px-8 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-300 flex items-center justify-center"
+                className="px-8 py-3 bg-blue-600  font-medium rounded-lg hover:bg-blue-700 transition-colors duration-300 flex items-center justify-center"
               >
-                Get Started
-                <ArrowRight size={18} className="ml-2" />
+                <p className="text-white">Get Started</p>
+                <ArrowRight size={18} className="ml-2 text-white" />
               </a>
               <a
                 href="#services"

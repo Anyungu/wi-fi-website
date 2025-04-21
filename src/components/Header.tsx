@@ -28,20 +28,12 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Wifi size={32} className="text-blue-600 mr-2" />
-            <span className="text-2xl font-bold text-blue-800">
-              ApartmentNet
-            </span>
+            <span className="text-2xl font-bold text-blue-800">EMOH LINKS</span>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            {[
-              "Services",
-              "Features",
-              "How It Works",
-              "Testimonials",
-              "Contact",
-            ].map((item) => (
+            {["Services", "Features", "How It Works", "Contact"].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}

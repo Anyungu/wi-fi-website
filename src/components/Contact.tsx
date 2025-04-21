@@ -48,7 +48,7 @@ const Contact: React.FC = () => {
                 <Phone className="text-blue-600 mt-1 mr-4" />
                 <div>
                   <h4 className="font-medium text-blue-900">Phone</h4>
-                  <p className="text-blue-800">+254 712 345 678</p>
+                  <p className="text-blue-800">+254 792 891 364</p>
                   <p className="text-sm text-blue-700 mt-1">
                     Available Monday-Friday, 8am-6pm EAT
                   </p>
@@ -59,7 +59,7 @@ const Contact: React.FC = () => {
                 <Mail className="text-blue-600 mt-1 mr-4" />
                 <div>
                   <h4 className="font-medium text-blue-900">Email</h4>
-                  <p className="text-blue-800">info@apartmentnet.co.ke</p>
+                  <p className="text-blue-800">emohlinksltd@gmail.com</p>
                   <p className="text-sm text-blue-700 mt-1">
                     We respond within 24 hours
                   </p>
@@ -70,7 +70,7 @@ const Contact: React.FC = () => {
                 <Map className="text-blue-600 mt-1 mr-4" />
                 <div>
                   <h4 className="font-medium text-blue-900">Office</h4>
-                  <p className="text-blue-800">Westlands Business Park</p>
+                  <p className="text-blue-800">Ruaka Square</p>
                   <p className="text-blue-800">Nairobi, Kenya</p>
                 </div>
               </div>

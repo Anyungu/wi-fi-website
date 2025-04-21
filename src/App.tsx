@@ -56,7 +56,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
-      <WhatsAppButton phoneNumber="254712345678" />
+      <WhatsAppButton phoneNumber="254792891364" />
     </div>
   );
 }
